@@ -11,3 +11,10 @@ Enable blue light schedule:
 2. Configure schedule by changing the time in files "blueLightTime" and "blueLightTimeOff" in .tmp_update/config/display.
 3. Ensure correct time in Apps -> Clock.
 
+HOW TO CHECK IF YOUR MINI V4 HAS RTC:
+1. Drag the .noTimeRestore file to .tmp_update/config (this will disable the default emulated time skip of +4 hours every time the device is turned on).
+2. Turn on device and go to Apps -> Clock.
+3. Set the time and confirm by pressing START.
+4. Turn off device, then wait a few seconds.
+5. Turn on device and check the clock app again. You have RTC if the time shown is still correct (meaning time has passed correctly while the device was switched off).
+
