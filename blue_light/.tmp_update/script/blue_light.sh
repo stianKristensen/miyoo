@@ -163,7 +163,7 @@ disable_blue_light_filter() {
     
     echo ":: Blue Light Filter: Disabled"
     rm -f $blf_key_on
-    rm -f $sysdir/config/.blfOn
+    rm -f $blf_key_on_user
 }
 
 check_blf() {
