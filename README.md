@@ -11,6 +11,10 @@ Enable blue light schedule:
 2. Configure schedule by changing the time in files "blueLightTime" and "blueLightTimeOff" in .tmp_update/config/display.
 3. Ensure correct time in Apps -> Clock.
 
+NOTES ABOUT THE BLUE LIGHT SCHEDULE:
+- The schedule options will not be visible in Apps -> Tweaks -> Appearance -> Blue light filter... (The display options are hardcoded to check for the MINI PLUS + Network Time (See src/tweaks/menus.h line 503, 525 and 507, 529, 539)).
+- The blue light schedule check will only trigger on startup (The continuous check is hardcoded to only run on a MINI PLUS (See src/keymon.c line 826)).
+
 HOW TO CHECK IF YOUR MINI V4 HAS RTC:
 1. Drag the .noTimeRestore file to .tmp_update/config (this will disable the default emulated time skip of +4 hours every time the device is turned on).
 2. Turn on device and go to Apps -> Clock.
