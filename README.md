@@ -1,5 +1,5 @@
 Mods for Onion V4.3.1-1 for Mini V4 with RTC
-- Resolution fix (Commit aa329ba on OnionUI main branch)
+- Resolution fix ([Commit aa329ba](https://github.com/OnionUI/Onion/commit/aa329bac862a93e12839c1a46765cdc270a3e448) on OnionUI main branch)
 - Disable Emulated time skip as it is not needed with the newer Mini V4 with RTC.
 - Enable blue light schedule function to automatically turn on/off blue light filter on startup.
 
