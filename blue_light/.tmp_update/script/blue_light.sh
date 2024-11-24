@@ -191,24 +191,20 @@ check_blf() {
                 if [ "$currentTimeMinutes" -ge "$blueLightTimeOnMinutes" ] || [ "$currentTimeMinutes" -lt "$blueLightTimeOffMinutes" ]; then
                     if [ ! -f $blf_key_on ]; then
                         enable_blue_light_filter 
-                        touch $blf_key_on
                     fi
                 else
                     if [ -f $blf_key_on ]; then
                         disable_blue_light_filter 
-                        rm $blf_key_on
                     fi
                 fi
             else
                 if [ "$currentTimeMinutes" -ge "$blueLightTimeOnMinutes" ] && [ "$currentTimeMinutes" -lt "$blueLightTimeOffMinutes" ]; then
                     if [ ! -f $blf_key_on ]; then
                         enable_blue_light_filter 
-                        touch $blf_key_on
                     fi
                 else
                     if [ -f $blf_key_on ]; then
                         disable_blue_light_filter 
-                        rm $blf_key_on
                     fi
                 fi
             fi
