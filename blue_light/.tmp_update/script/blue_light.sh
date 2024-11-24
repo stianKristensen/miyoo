@@ -168,7 +168,7 @@ disable_blue_light_filter() {
 
 check_blf() {
     sync
-    if [ ! -f "$blf_key" ] || [ ! -f "$ignore_schedule" ]; then
+    if [ -f "$blf_key" ] || [ ! -f "$ignore_schedule" ]; then
         
         blueLightTimeOnFile="$sysdir/config/display/blueLightTime"
         blueLightTimeOffFile="$sysdir/config/display/blueLightTimeOff"
