@@ -198,9 +198,6 @@ disable_blue_light_filter() {
 check_blf() {
     sync
     if [ ! -f "$ignore_schedule" ]; then
-        if [ ! -f "$sysdir/config/.ntpState" ]; then
-            return
-        fi
         
         blueLightTimeOnFile="$sysdir/config/display/blueLightTime"
         blueLightTimeOffFile="$sysdir/config/display/blueLightTimeOff"
